@@ -20,6 +20,9 @@ function HomePage() {
               .typeString("He's a great guy!")
               .pause(3000)
               .deleteAll()
+              .typeString("A master in WordPress")
+              .pause(3000)
+              .deleteAll()
               .typeString("A frontend React JS Developer")
               .start();
           }}

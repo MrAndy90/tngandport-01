@@ -16,9 +16,9 @@ function ImageSection() {
           Hello, My Name is <span>Andy Allen</span>
         </h4>
         <p className="paragraph">
-          A passionate React JS Frontend Developer, with a background in Graphic
-          Design. My expertise is to create & design alluring practical fully
-          responsive websites to suit your needs.
+          A passionate WordPress & React JS Frontend Developer, with a
+          background in Graphic Design. My expertise is to create & design
+          alluring practical fully responsive websites to suit your needs.
         </p>
         <div className="about-info">
           <div className="info-title">
@@ -35,24 +35,21 @@ function ImageSection() {
             <p>British, Belgian</p>
             <p>English, Dutch</p>
             <p>Antwerp, Belgium</p>
-            <p>React js Web Developer</p>
+            <p>Expertise in WordPress Elementor & REACT JS</p>
           </div>
         </div>
         <div className="cv-uk-button">
           <PrimaryButton
-            src={cvuk}
-            alt="cvuk"
-            href={cvuk}
-            download="AA-CV-EN.pdf"
+            todownload={cvuk}
             title={"Download CV (ENG)"}
             className="cv-uk-button"
           />
         </div>
         <div className="cv-nl-button">
           <PrimaryButton
-            href={cvnl}
-            download="AA-CV-NL.pdf"
+            todownload={cvnl}
             title={"Download CV (nl)"}
+            className="cv-nl-button"
           />
         </div>
       </div>

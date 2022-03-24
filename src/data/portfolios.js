@@ -70,6 +70,14 @@ const portfolios = [
     title: "Responsive Portfolio Website",
     text: "Created using different technologies such as Material UI, Styled-Components and more...",
   },
+  {
+    id: 8,
+    category: "WordPress",
+    image: euro2020,
+    link1: "https://www.google.com",
+    title: "Euro2020 App",
+    text: "WordPress",
+  },
 ];
 
 export default portfolios;

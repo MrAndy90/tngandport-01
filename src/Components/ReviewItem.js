@@ -1,15 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 
-function ReviewItem({ text }) {
+function ReviewItem({ text, text2, link }) {
   return (
-    <ReviewItemStyled>
+    <ReviewItemStyled target="_blank" href={link} download>
       <p>{text}</p>
+      <h3>{text2}</h3>
     </ReviewItemStyled>
   );
 }
 
-const ReviewItemStyled = styled.div`
+const ReviewItemStyled = styled.a`
+  cursor: pointer;
   padding: 1rem 1rem;
   border-left: 6px solid var(--border-color);
   background-color: var(--background-dark-grey);
@@ -28,7 +30,7 @@ const ReviewItemStyled = styled.div`
       var(--background-dark-grey);
   }
   p {
-    padding: 1rem 0;
+    padding: 0.6 0rem;
   }
 `;
 

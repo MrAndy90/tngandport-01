@@ -22,7 +22,14 @@ function ContactPage() {
             <div className="contact-title">
               <h4>GET IN TOUCH</h4>
             </div>
-            <form className="form">
+            <form
+              name="contact v1"
+              method="post"
+              data-netlify="true"
+              onSubmit="submit"
+              className="form"
+            >
+              <input type="hidden" name="form-name" value="contact v1" />
               <div className="form-field">
                 <label htmlFor="name">Name:</label>
                 <input type="text" id="name" />
@@ -45,7 +52,7 @@ function ContactPage() {
                 ></textarea>
               </div>
               <div className="form-field f-button">
-                <PrimaryButton title={"HIT ME!"} />
+                <PrimaryButton type="submit" title={"HIT ME!"} />
               </div>
             </form>
           </div>

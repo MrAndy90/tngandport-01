@@ -7,6 +7,7 @@ function Button({ filter, button }) {
       {button.map((but, i) => {
         return (
           <ButtonStyled key={i} onClick={() => filter(but)}>
+            {console.log("hello")}
             {but}
           </ButtonStyled>
         );

@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Title from "./Title";
 import { InnerLayout } from "../styles/Layouts";
 import ReviewItem from "./ReviewItem";
+import FootballFlyer from "../img/FootballFlyer21.png";
 
 function ReviewsSection() {
   return (
@@ -12,14 +13,16 @@ function ReviewsSection() {
       <InnerLayout>
         <div className="reviews">
           <ReviewItem
-            text={"Currently maintaining & updating www.btssport.be"}
-            href={"https://www.btssport.be/"}
+            as="a"
+            text={"Using WordPress, Currently maintaining & updating"}
+            text2={"BTS Sport"}
+            link="https://www.btssport.be/"
           />
           <ReviewItem
-            text={
-              "A recent flyer, to help support a local football team 'Sint-Jozef Flyer'"
-            }
-            href={"https://www.svsintjozef.be/"}
+            text={"A recent flyer, to help support a local football team"}
+            text2={"Sint-Jozef Voetbalstage"}
+            link={FootballFlyer}
+            className="reviews"
           />
         </div>
       </InnerLayout>
@@ -35,6 +38,12 @@ const ReviewStyled = styled.section`
     width: 100%;
     @media screen and (max-width: 650px) {
       grid-template-columns: repeat(1, 1fr);
+    }
+    h3 {
+      color: #007bff;
+      margin: 0.2rem;
+      font-size: 1.5rem;
+      font-weight: 1000;
     }
   }
 `;

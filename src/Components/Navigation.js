@@ -25,11 +25,7 @@ function Navigation() {
             Projects
           </NavLink>
         </li>{" "}
-        <li className="nav-item">
-          <NavLink to="/references" activeClassName="active-class" exact>
-            References
-          </NavLink>
-        </li>{" "}
+        <li className="nav-item"></li>{" "}
         <li className="nav-item">
           <NavLink to="/contact" activeClassName="active-class" exact>
             Contact Me
@@ -37,7 +33,7 @@ function Navigation() {
         </li>
       </ul>
       <footer className="footer">
-        <p>@2021 Mr Andy</p>
+        <p>(Work in Progress) @2022 Mr Andy </p>
       </footer>
     </NavigationStyled>
   );

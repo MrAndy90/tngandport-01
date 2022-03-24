@@ -1,8 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-function PrimaryButton({ title }) {
-  return <PrimaryButtonStyled>{title}</PrimaryButtonStyled>;
+function PrimaryButton({ title, todownload }) {
+  return (
+    <PrimaryButtonStyled href={todownload} download>
+      {title}
+    </PrimaryButtonStyled>
+  );
 }
 
 const PrimaryButtonStyled = styled.a`
